@@ -8,7 +8,7 @@ AllCops:
   DisplayCopNames: true
 
 Layout/LineLength:
-  Max: 120
+  Max: 125
 Metrics/MethodLength:
   Max: 20
 Metrics/AbcSize:
@@ -16,8 +16,8 @@ Metrics/AbcSize:
 Metrics/ClassLength:
   Max: 150
 Metrics/BlockLength:
-  IgnoredMethods: ['describe']
   Max: 30
+  AllowedMethods: ['describe', 'context', 'shared_examples', 'shared_context', 'feature', 'scenario', 'it', 'before', 'after', 'around', 'let', 'let!']
 
 
 Style/Documentation:
